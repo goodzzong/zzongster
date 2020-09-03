@@ -1,0 +1,33 @@
+{
+  "name": "react-nodebird-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goodzzong/zzongster.git"
+  },
+  "author": "goodzzong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goodzzong/zzongster/issues"
+  },
+  "homepage": "https://github.com/goodzzong/zzongster#readme",
+  "dependencies": {
+    "@ant-design/icons": "^4.2.2",
+    "antd": "^4.6.2",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0"
+  }
+}
