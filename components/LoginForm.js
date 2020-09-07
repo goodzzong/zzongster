@@ -1,9 +1,11 @@
 import React, { useState, useCallback } from "react";
+import { useDispatch } from "react-redux";
 import PropTypes from "prop-types";
 import { Form, Input, Button } from "antd";
 import Link from "next/link";
 import styled from "styled-components";
 import useInput from "../hooks/useInput";
+import { loginAction } from "../reducers/user";
 
 const ButtonWrapper = styled.div`
   margin-top: 10px;
@@ -12,13 +14,15 @@ const ButtonWrapper = styled.div`
 const FormWrapper = styled(Form)`
   padding: 10px;
 `;
-const LoginForm = ({ setIsLoggedIn }) => {
+
+const LoginForm = () => {
+  const dispatch = useDispatch();
   const [id, onChangeId] = useInput("");
   const [password, onChangePassword] = useInput("");
 
   const onSubmitForm = useCallback(() => {
     console.log(id, password);
-    setIsLoggedIn(true);
+    dispatch(loginAction({ id, password }));
   }, [id, password]);
 
   // 앤트 디자인에서 Form 의 onFinish 는 event.preventDefault() 가 이미 적용되어 있어 굳이 안해도 된다.
