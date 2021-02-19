@@ -15,6 +15,7 @@ const FormWrapper = styled(Form)`
   padding: 10px;
 `;
 
+//const LoginForm = ({setIsLoggedIn}) => {
 const LoginForm = () => {
   const dispatch = useDispatch();
   const [id, onChangeId] = useInput("");
@@ -59,8 +60,8 @@ const LoginForm = () => {
   );
 };
 
-LoginForm.propTypes = {
-  setIsLoggedIn: PropTypes.func.isRequired,
-};
+// LoginForm.propTypes = {
+//   setIsLoggedIn: PropTypes.func.isRequired,
+// };
 
 export default LoginForm;
