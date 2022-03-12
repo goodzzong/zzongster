@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
-import Slick from 'react-slick';
+// import Slick from 'react-slick';
 
 const ImagesZoom = ({ images, onClose }) => {
 	const [currentSlide, setCurrentSlide] = useState();
@@ -11,7 +11,7 @@ const ImagesZoom = ({ images, onClose }) => {
 				<button onClick={onClose}>X</button>
 			</header>
 			<div>
-				<Slick 
+				{/* <Slick 
 					initialSlide={0}
 					afterChange={(slide) => setCurrentSlide(slide)}
 					infinite
@@ -23,7 +23,7 @@ const ImagesZoom = ({ images, onClose }) => {
 							<img src={v.src} alt={v.src} />
 						</div>
 					))}
-				</Slick>
+				</Slick> */}
 			</div>
 		</div>
 	)

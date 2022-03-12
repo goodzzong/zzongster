@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "coverage": "jest --coverage",
+    "test": "npx jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
     "@ant-design/icons": "^4.2.2",
     "antd": "^4.6.2",
     "next": "^9.5.3",
+    "next-redux-saga": "^4.1.2",
     "next-redux-wrapper": "^6.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -27,12 +30,19 @@
     "react-slick": "^0.27.13",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
+    "redux-saga": "^1.1.3",
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "babel-jest": "^26.6.3",
     "eslint": "^7.8.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0"
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "given2": "^2.1.7",
+    "jest": "^26.6.3",
+    "jest-plugin-context": "^2.9.0"
   }
 }
